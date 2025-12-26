@@ -1,0 +1,6 @@
+# ملف robots.txt لموقعك
+User-agent: *
+
+Allow: /
+
+Sitemap: https://yourdomain.com/sitemap.xml
