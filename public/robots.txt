@@ -3,4 +3,4 @@ User-agent: *
 
 Allow: /
 
-Sitemap: https://yourdomain.com/sitemap.xml
+Sitemap: https://kutub-alhauza.netlify.app//sitemap.xml

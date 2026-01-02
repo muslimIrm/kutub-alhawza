@@ -22,24 +22,42 @@ export const metadata = {
   },
   description:
     "موقع يقدم أشهر كتب الدراسة الحوزوية مرتبة حسب المراحل، مع وصف علمي واضح لكل كتاب لتسهيل طريق طالب العلم.",
-  applicationName: "مكتبة الحوزة العلمية",
+
+  robots: {
+    index: true,
+    follow: true,
+  },
+
   icons: {
     icon: "/favicon.png",
   },
+
   openGraph: {
     title: "مكتبة الحوزة العلمية",
-    siteName: "مكتبة الحوزة العلمية",
     description:
       "كتب حوزوية مرتبة لكل مرحلة دراسية، مع شروح مختصرة ومنهجية واضحة.",
+    url: "https://kutub-alhauza.netlify.app/",
+    siteName: "مكتبة الحوزة العلمية",
+    images: [
+      {
+        url: "https://kutub-alhauza.netlify.app/favicon.icon",
+        width: 512,
+        height: 512,
+        alt: "مكتبة الحوزة العلمية",
+      },
+    ],
+    locale: "ar_AR",
     type: "website",
   },
 };
 
 
 
+
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className=" scroll-smooth">{/* Google Analytics */}
+    <html lang="ar" className=" scroll-smooth">{/* Google Analytics */}
+
       <Script
         strategy="afterInteractive"
         src="https://www.googletagmanager.com/gtag/js?id=G-1MTZXGJFRS"
@@ -54,6 +72,8 @@ export default function RootLayout({ children }) {
           });
         `}
       </Script>
+
+
       <body
         className={`${cairo.variable} ${tajawal.variable} font-cairo antialiased`}
       >
