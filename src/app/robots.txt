@@ -1,0 +1,6 @@
+# ملف robots.txt لموقعك
+User-agent: *
+
+Allow: /
+
+Sitemap: https://kutub-alhauza.netlify.app//sitemap.xml
